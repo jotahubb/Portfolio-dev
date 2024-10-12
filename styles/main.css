@@ -68,14 +68,14 @@
 }
 
 @media (max-width: 480px) {
-  html, body {
-    width: 100%;
-    overflow-x: hidden; /* Esconde o overflow horizontal, se houver */
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   #stack, #project {
-    max-width: 95%; 
-    padding: 20px; 
+    max-width: 100%; 
     overflow: hidden; 
   }
   #stack ul, #project div {
