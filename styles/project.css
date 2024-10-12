@@ -51,16 +51,20 @@
   }
 
   div {
-    flex-direction: column; /* Empilha as imagens verticalmente */
+    flex-direction: column; 
   }
 
   a {
-    width: 90%; /* Faz o link ocupar 90% da largura no mobile */
-    margin: 10px auto; /* Centraliza o link */
+    width: 90%; 
+    margin: 10px auto;
+  }
+
+  p{
+    text-align: center;
   }
 
   img {
-    width: 100%; /* A imagem ocupa a largura total do link */
+    width: 100%; 
     height: auto;
   }
 }

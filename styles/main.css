@@ -68,13 +68,9 @@
 }
 
 @media (max-width: 480px) {
-  main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  #presentation
 
-  #stack, #project {
+  #stack, #project,  #presentation {
     max-width: 100%; 
     overflow: hidden; 
   }
@@ -91,11 +87,11 @@
   }
 
   p {
-    width: 35vh;
+    text-align: center;
+    width: 100%;
   }
 
   ul li {
     margin-right: 2px;
   }
-
 }
