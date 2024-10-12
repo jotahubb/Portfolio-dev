@@ -1,5 +1,5 @@
-#presentation, #stack {
-  height: 60vh;
+#presentation, #stack, #journey, #network {
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,14 +14,6 @@
     list-style-type: none; 
   }
   
-  a:hover{
-    border: 1px solid var(--color-text);
-    padding: 8px;
-    border-radius: 10px;
-    background-color: #fcfafa;
-    font-weight: 600;
-  }
-
   h1 {
     font-size: 8vh;
   }
@@ -67,14 +59,41 @@
   }
 }
 
-@media (max-width: 480px) {
-  #presentation
+#journey {
+  ul {
+    margin-top: 3vh;
+    flex-direction: column;
+  }
 
-  #stack, #project,  #presentation {
+  li {
+    list-style-type: disc;
+  }
+}
+
+#network{
+  height: 20vh;
+
+  img {
+    margin-top: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+
+}
+
+@media (max-width: 480px) {
+  
+
+  #stack, #project,  #presentation, {
     max-width: 100%; 
     overflow: hidden; 
   }
-  #stack ul, #project div {
+
+  #stack ul, #project div, #journey ul {
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;

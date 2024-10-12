@@ -23,11 +23,6 @@ a, p{
 body {
   animation-duration: 3s;
   animation-name: slidein;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  background-image: linear-gradient(to right, #ffffff, #ffffff);;
 }
 
 @keyframes slidein {
