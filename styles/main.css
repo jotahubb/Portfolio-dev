@@ -1,0 +1,101 @@
+#presentation, #stack {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    display: flex;
+    gap: 20px; 
+  }
+
+  li {
+    list-style-type: none; 
+  }
+  
+  a:hover{
+    border: 1px solid var(--color-text);
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #fcfafa;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: 10vh;
+  }
+
+}
+
+#stack {
+  flex-wrap: nowrap;
+  min-height:5vh;
+
+  h2 {
+    font-size: 5vh;
+    margin-bottom: 26px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .icon{
+    width: 3rem;
+    height: 3rem; 
+    animation: float 3s ease-in-out infinite; 
+    transition: transform 0.3s ease;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(-10px); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
+
+@media (max-width: 480px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden; /* Esconde o overflow horizontal, se houver */
+  }
+
+  #stack, #project {
+    max-width: 95%; 
+    padding: 20px; 
+    overflow: hidden; 
+  }
+  #stack ul, #project div {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 0; 
+    margin: 0; 
+  }
+
+  h1, h2{
+    text-align: center;
+  }
+
+  p {
+    width: 35vh;
+  }
+
+  ul li {
+    margin-right: 2px;
+  }
+
+}
